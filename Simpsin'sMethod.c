@@ -25,3 +25,17 @@ int main(void){
     S=(S+4.0*s1+2.0*s2)*h/3.0;
     printf("divide:%2d, S=%f\n",n,S);
 }
+
+/*
+input n:4
+divide: 4, S=0.746826
+
+input n:10
+divide:10, S=0.746824
+
+input n:20
+divide:20, S=0.746824
+
+input n:40
+divide:40, S=0.746824
+*/
