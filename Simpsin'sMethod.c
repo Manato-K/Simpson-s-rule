@@ -3,14 +3,14 @@
 #include <stdio.h>
 #include <math.h>
 float f(float x){
-    return(exp(-x*x));
+    return(exp(x*x));
 }
 int main(void){
     int i,n;
     float a=0.0,b=1.0,h,s1=0.0,s2=0.0,S,x;
     printf("input n:");
     scanf("%d",&n);
-    h=(b-a)/(1-(2*n)^2);
+    h=(b-a)/(2.0*n);
 
     S=f(a)+f(b);
     for(i=1;i<2*n;i++) {
@@ -27,16 +27,15 @@ int main(void){
 }
 
 /*
-
 input n:2
-divide: 2, S=-0.855679
+divide: 2, S=1.463711
 
 input n:5
-divide: 5, S=-0.387194
+divide: 5, S=1.462681
 
 input n:10
-divide:10, S=-0.197312
+divide:10, S=1.462654
 
 input n:20
-divide:20, S=-0.099396
+divide:20, S=1.462652
 */
