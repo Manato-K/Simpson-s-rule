@@ -10,7 +10,7 @@ int main(void){
     float a=0.0,b=1.0,h,s1=0.0,s2=0.0,S,x;
     printf("input n:");
     scanf("%d",&n);
-    h=(b-a)/(2.0*n);
+    h=(b-a)/(1-(2*n)^2);
 
     S=f(a)+f(b);
     for(i=1;i<2*n;i++) {
@@ -27,15 +27,16 @@ int main(void){
 }
 
 /*
-input n:4
-divide: 4, S=0.746826
+
+input n:2
+divide: 2, S=-0.855679
+
+input n:5
+divide: 5, S=-0.387194
 
 input n:10
-divide:10, S=0.746824
+divide:10, S=-0.197312
 
 input n:20
-divide:20, S=0.746824
-
-input n:40
-divide:40, S=0.746824
+divide:20, S=-0.099396
 */
